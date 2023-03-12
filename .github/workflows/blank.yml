@@ -3,8 +3,11 @@
 name: CI
 
 on:
-  schedule:
-  - cron: "*/1 * * * *"
+  push:
+   branches:
+     - main
+   paths:
+     - src/*
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -23,9 +26,3 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: curl www.google.com
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
