@@ -29,4 +29,4 @@ jobs:
       - name: Run a one-line script
         run: |
          curl www.google.com
-         ping www.baidu.com -t 
+         ping www.baidu.com
