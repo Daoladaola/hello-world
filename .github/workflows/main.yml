@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+    - main
+    - release/*
+    
+jobs:
+  test:
+    runs-on: buntu-latest
+    
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: curl
+      run: curl www.google.com
+     
+
