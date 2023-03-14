@@ -28,9 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-         curl www.google.com
          uname -a
          free -m
-         df -h
-         ip ad
 
